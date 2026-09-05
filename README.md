@@ -11,7 +11,7 @@ A structured C++ problem-solving repository. Every problem has its own folder, a
 - 🔁 Alternative solutions are preserved separately
 - 🧹 Clean paths using `-` with no spaces
 - ▶️ Direct **View Code** links
-- 🎮 Two complete projects at the end
+- 🎮 Projects are kept in their **own dedicated GitHub repositories**
 
 ---
 
@@ -74,10 +74,12 @@ A structured C++ problem-solving repository. Every problem has its own folder, a
 
 # 🎮 Projects
 
-| # | Project | Solutions | ▶ View |
+> These projects are **not stored inside this repository**. They have their own dedicated GitHub repositories, and the buttons below open those repositories directly.
+
+| # | Project | Solutions | 🔗 Open Project |
 |---:|---|---:|:---:|
-| 01 | Rock Paper Scissors Game | 5 | [Open Project](.[/Project-01-Rock-Paper-Scissors-Game](https://github.com/Ahmedhamdy009/Stone-Paper-Scissors-Game)) |
-| 02 | Math Quiz Game | 3 | [Open Project](.[/Project-02-Math-Quiz-Game](https://github.com/Ahmedhamdy009/Math-Game)) |
+| 01 | 🪨📄✂️ Rock Paper Scissors Game | 5 | [▶ Open Project](https://github.com/Ahmedhamdy009/Stone-Paper-Scissors-Game) |
+| 02 | 🧮 Math Quiz Game | 3 | [▶ Open Project](https://github.com/Ahmedhamdy009/Math-Game) |
 
 ---
 
