@@ -1,35 +1,47 @@
 #include <iostream>
-#include <string>
-#include <cmath>
 using namespace std;
-int ReadPositiveNumber(string Message) {
-int Number;
-do {
-cout << Message;
-cin >> Number;
-} while (Number < 0);
-return Number;
+int ReadPositiveNumber(string Message)
+{
+    int Number = 0;
+    do
+    {
+    cout<<Message;
+    cin>>Number;
+        
+    } while (Number <0);
+    return Number;
 }
-int CountDigitFrequency(int Number, int DigitToCheck) {
-int Feqcounter = 0;
-int Remainder = 0;
-while (Number > 0) {
-Remainder = Number % 10;
-Number = Number / 10;
-if (Remainder == DigitToCheck) Feqcounter++;
+int FrequencyNumber(int Number , short DigitToCheck)
+{
+    int Reminder = 0;
+    int frequency = 0;
+   while (Number > 0)
+   {
+   Reminder = Number % 10;//1223222 %10=2
+   Number = Number / 10;//1223222 /10=122322
+    if (Reminder == DigitToCheck) // 2=2 ?
+    {
+      frequency++;//0 + 1 =1 | 1 + 1 = 2 
+    }
+   }
+   return frequency;
 }
-return Feqcounter;
+void PrintAllDigitsFrequency(int Number)
+{
+   short DigitFrequency = 0;
+    for(int i =0 ;i< 10 ;i++)
+    {
+        DigitFrequency = FrequencyNumber(Number,i);//frequency++ بتزيد هنا
+        //(1223222,0) | (1223222,1)
+        if(DigitFrequency > 0)// 0 > 0 ?| 1 > 0 ?
+        {
+     cout << "Digit " << i << " Frequency is " << DigitFrequency << " Time(s) \n";
+
+        }
+    }
 }
-void PrintAllDigitFrequency(int Number) {
-for (int digit = 0; digit < 10; digit++) {
-short DigitFrequency = CountDigitFrequency(Number, digit);
-if (DigitFrequency > 0) {
-cout << "\nDigit " << digit << " Frequency is " << DigitFrequency << " Time(S)\n";
-}
-}
-}
-int main() {
-int Number = ReadPositiveNumber("please enter the main number: ");
-PrintAllDigitFrequency(Number);
-return 0;
+int main()
+{
+    int Number = ReadPositiveNumber("Please enter the main Number : ");
+    PrintAllDigitsFrequency(Number);
 }

@@ -1,27 +1,34 @@
 #include <iostream>
-#include <string>
-#include <cmath>
 using namespace std;
-int ReadPositiveNumber(string Message) {
-int number = 0;
-do {
-cout << Message;
-cin >> number;
-} while (number <= 0);
-return number;
+int ReadPositiveNumber(string Message)
+{
+    int Number = 0;
+    do
+    {
+        cout << Message<<endl;
+        cin >> Number;
+    } while (Number <= 0);
+    return Number;
 }
-int FrequencyNumber(int Number, int DigitToCheck) {
-int counter = 0;
-int Remainder = 0;
-while (Number > 0) {
-Remainder = Number % 10;
-Number = Number / 10;
-if (Remainder == DigitToCheck) counter++;
+int CountDigitFrequency(int Number, short DigitToCheck)
+{
+    int Reminder = 0;
+    int counter = 0;
+    while (Number > 0)
+    {
+        Reminder = Number % 10;
+        Number = Number / 10;
+        if (Reminder == DigitToCheck)
+        {
+            counter++;
+        }
+    }
+    return counter;
 }
-return counter;
-}
-int main() {
-int Number = ReadPositiveNumber("please enter the main number: ");
-short DigitToCheck = ReadPositiveNumber("please enter one digit to check : ");
-cout << "Digit " << DigitToCheck << " Frequency is " << FrequencyNumber(Number, DigitToCheck) << " Time(s)." << endl;
+int main()
+{
+    int Number = ReadPositiveNumber("Please enter the main Number : ");
+    short DigitToCheck = ReadPositiveNumber("Please enter one Digit To Check : ");
+    //Short عشان احجز مكان اصغر في الزاكرة عشان انا هدخل رقم واحد
+    cout << "Digit " << DigitToCheck << " Frequency is " << CountDigitFrequency(Number, DigitToCheck) << " Time(s) \n";
 }
