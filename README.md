@@ -76,8 +76,8 @@ A structured C++ problem-solving repository. Every problem has its own folder, a
 
 | # | Project | Solutions | ▶ View |
 |---:|---|---:|:---:|
-| 01 | Rock Paper Scissors Game | 5 | [Open Project](./Project-01-Rock-Paper-Scissors-Game) |
-| 02 | Math Quiz Game | 3 | [Open Project](./Project-02-Math-Quiz-Game) |
+| 01 | Rock Paper Scissors Game | 5 | [Open Project](.[/Project-01-Rock-Paper-Scissors-Game](https://github.com/Ahmedhamdy009/Stone-Paper-Scissors-Game)) |
+| 02 | Math Quiz Game | 3 | [Open Project](.[/Project-02-Math-Quiz-Game](https://github.com/Ahmedhamdy009/Math-Game)) |
 
 ---
 
